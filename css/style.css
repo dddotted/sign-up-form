@@ -7,7 +7,7 @@
     url(../fonts/Norse-Bold.woff);
   font-weight: bold;
   font-style: normal;
-  display: swap;
+  font-display: swap;
 }
 
 *,
@@ -35,7 +35,7 @@ img {
 
 .container {
   display: grid;
-  grid-template-columns: 535px 1fr;
+  grid-template-columns: minmax(300px, 535px) 1fr;
   min-height: 100dvh;
 }
 
@@ -147,12 +147,11 @@ img {
 
 .form-block input:focus {
 	border-color: blue;
-	box-shadow: none;
 	outline: none;
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
 }
 
-.form-block input[type="password"]:invalid {
+.form-block input[type="password"]:user-invalid {
   border-color: #B91C1C;
 }
 
